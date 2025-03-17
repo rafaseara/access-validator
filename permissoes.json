@@ -1,0 +1,30 @@
+{
+    "usuarios": [
+        {"nome": "Alice", "acessos": ["entrada", "sala de reunião"]},
+        {"nome": "Bob", "acessos": ["entrada"]},
+        {"nome": "Carlos", "acessos": ["entrada", "sala de servidores"]},
+        {"nome": "Diana", "acessos": ["entrada", "sala de reunião", "sala de servidores"]},
+        {"nome": "Eva", "acessos": ["entrada", "laboratório"]},
+        {"nome": "Fernando", "acessos": ["entrada", "sala de servidores", "sala de reunião"]},
+        {"nome": "Gabriel", "acessos": ["entrada", "laboratório", "sala de servidores"]},
+        {"nome": "Hugo", "acessos": ["entrada", "sala de reunião"]},
+        {"nome": "Isabel", "acessos": ["entrada", "laboratório"]},
+        {"nome": "João", "acessos": ["entrada", "sala de servidores", "sala de reunião"]},
+        {"nome": "Karina", "acessos": ["entrada", "sala de servidores"]},
+        {"nome": "Lucas", "acessos": ["entrada", "sala de reunião", "laboratório"]},
+        {"nome": "Marcos", "acessos": ["entrada", "sala de reunião"]},
+        {"nome": "Natália", "acessos": ["entrada", "laboratório"]},
+        {"nome": "Olga", "acessos": ["entrada", "sala de servidores", "laboratório"]},
+        {"nome": "Paulo", "acessos": ["entrada", "sala de servidores"]},
+        {"nome": "Quésia", "acessos": ["entrada", "sala de reunião"]},
+        {"nome": "Rafael", "acessos": ["entrada", "laboratório", "sala de servidores"]},
+        {"nome": "Sofia", "acessos": ["entrada", "sala de reunião"]},
+        {"nome": "Tiago", "acessos": ["entrada", "sala de servidores", "laboratório"]},
+        {"nome": "Ursula", "acessos": ["entrada", "sala de servidores"]},
+        {"nome": "Victor", "acessos": ["entrada", "sala de reunião", "sala de servidores"]},
+        {"nome": "Walter", "acessos": ["entrada", "laboratório"]},
+        {"nome": "Xuxa", "acessos": ["entrada", "sala de servidores", "sala de reunião"]},
+        {"nome": "Yara", "acessos": ["entrada", "laboratório"]},
+        {"nome": "Zé", "acessos": ["entrada", "sala de servidores"]}
+]
+}
