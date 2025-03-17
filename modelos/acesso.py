@@ -14,7 +14,7 @@ def verificar_acesso_input(nome_usuario, area_desejada, usuarios):
     print(f"Verificando acesso para: {nome_usuario.capitalize()} na área: {area_desejada}")
 
     if not usuarios:
-        print("⚠️ Nenhuma permissão carregada. Verifique o arquivo JSON.")
+        print("⚠️ \"Nenhuma permissão carregada. Verifique o arquivo JSON.\"")
         return
 
     try:
@@ -23,9 +23,9 @@ def verificar_acesso_input(nome_usuario, area_desejada, usuarios):
             raise ValueError("Usuário não encontrado no sistema!")
 
         if validar_acesso(nome_usuario, area_desejada, usuarios):
-            print("✅ Acesso permitido!")
+            print("✅  \"Acesso permitido!\"")
         else:
-            print("❌ Acesso negado!")
+            print("❌  \"Acesso negado!\"")
 
     except ValueError as e:
         print(f"❌ Erro: {e}")
