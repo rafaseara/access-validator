@@ -31,22 +31,21 @@ def verificar_acesso_input(nome_usuario, area_desejada, usuarios):
         usuarios (list): Lista de usuários e suas permissões.
     """
     
-    print(f"Verificando acesso para: {nome_usuario.capitalize()} na área: {area_desejada}")
+    print(f"\nVerificando acesso para {nome_usuario.capitalize()} na área: {area_desejada}")
 
     if not usuarios:
-        print("⚠️ \"Nenhuma permissão carregada. Verifique o arquivo JSON.\"")
+        print("⚠️ \"Nenhuma permissão carregada. Verifique o arquivo JSON.\"\n")
         return
 
     try:
-        # Verificar se o nome do usuário existe, considerando a comparação insensível a maiúsculas/minúsculas
         if not any(usuario.nome.strip().lower() == nome_usuario.strip().lower() for usuario in usuarios):
             raise ValueError("Usuário não encontrado no sistema!")
 
         if validar_acesso(nome_usuario, area_desejada, usuarios):
-            print("✅  \"Acesso permitido!\"")
+            print("✅  \"Acesso permitido!\"\n")
         else:
-            print("❌  \"Acesso negado!\"")
+            print("❌  \"Acesso negado!\"\n")
 
     except ValueError as e:
-        print(f"❌ Erro: {e}")
+        print(f"❌ Erro: {e}\n")
     
