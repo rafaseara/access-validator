@@ -2,6 +2,10 @@ from utils.json_manager import JsonManager
 from modelos.acesso import verificar_acesso_input
 
 def main():
+    """
+    Função principal que solicita os inputs e faz a verificacao do acesso.
+    """
+    
     usuarios = JsonManager.carregar_permissoes('permissoes.json')
 
     nome_usuario = input("Digite seu nome: ")

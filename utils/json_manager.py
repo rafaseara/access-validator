@@ -2,8 +2,18 @@ import json
 from modelos.usuario import Usuario
 
 class JsonManager:
+    """Classe para manipulacao de permissoes a partir de um arquivo JSON"""
     @staticmethod
     def carregar_permissoes(caminho):
+        """
+        Carrega as permissões de um arquivo JSON.
+        
+        Entrada:
+            caminho (str): Caminho do arquivo JSON.
+        
+        Saída:
+            list: Lista de objetos Usuario com permissões.
+        """
         try:
             with open(caminho, 'r', encoding='utf-8') as arquivo:  
                 dados = json.load(arquivo)

@@ -2,6 +2,17 @@ import json
 from modelos.usuario import Usuario
 
 def validar_acesso(nome_usuario, area_desejada, usuarios):
+    """
+    Faz a validacao do usuario no json e se sua area desejada se encontra na area permitida.
+    
+    Entrada:
+        nome_usuario (str): Nome do usuário.
+        area_desejada (str): Área desejada.
+    
+    Saída:
+        bool: Retorna verdadeiro se o usuário tiver acesso, e falso para o contrário.
+    """
+
     nome_usuario = nome_usuario.strip().lower()  
     area_desejada = area_desejada.strip().lower()  
 
@@ -11,6 +22,15 @@ def validar_acesso(nome_usuario, area_desejada, usuarios):
     return False
 
 def verificar_acesso_input(nome_usuario, area_desejada, usuarios):
+    """
+    Verifica e exibe se o usuário tem acesso à área solicitada conforme json.
+    
+    Entrada:
+        nome_usuario (str): Nome do usuário.
+        area_desejada (str): Área desejada.
+        usuarios (list): Lista de usuários e suas permissões.
+    """
+    
     print(f"Verificando acesso para: {nome_usuario.capitalize()} na área: {area_desejada}")
 
     if not usuarios:
