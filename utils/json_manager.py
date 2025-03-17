@@ -5,7 +5,7 @@ class JsonManager:
     @staticmethod
     def carregar_permissoes(caminho):
         try:
-            with open(caminho, 'r') as arquivo:
+            with open(caminho, 'r', encoding='utf-8') as arquivo:  # Especificando codificação UTF-8
                 dados = json.load(arquivo)
                 return [Usuario(usuario['nome'], usuario['acessos']) for usuario in dados['usuarios']]
         except FileNotFoundError:
