@@ -22,6 +22,7 @@ Neste tópico de melhorias, eu gostaria de descrever possíveis acertos que pode
 - Quando o projeto adquirir maior complexidade, fazer uma divisão melhor das pastas seguindo o formato padrão de controllers, models, utils e tests
 - Dependendo da área restrita em questão adicionar mais informações do usuário para maior segurança do estabelecimento 
 - Considerar que a área não possui acento ou houve uma falta dele na digitação, e mesmo assim ser capaz de retornar a área (como: laboratorio)
+- Desenvolver maior aptidão no quesito de testes, para garantir seu bom funcionamento e conseguir documentá-lo
 
 # Feedback
 Se houver algum feedback sobre meu projeto, por favor compartilhe comigo, deixo abaixo meu e-mail para que me deixe sabendo
