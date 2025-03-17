@@ -1,5 +1,5 @@
 import json
-from usuario import Usuario
+from modelos.usuario import Usuario
 
 def validar_acesso(nome_usuario, area_desejada, usuarios): 
     for usuario in usuarios:
