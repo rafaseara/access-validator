@@ -1,17 +1,4 @@
-from utils.json_manager import JsonManager
-from modelos.acesso import verificar_acesso_input
+from fastapi import FastAPI, Query
+import json
 
-def main():
-    """
-    Função principal que solicita os inputs e faz a verificacao do acesso.
-    """
-    
-    usuarios = JsonManager.carregar_permissoes('permissoes.json')
-
-    nome_usuario = input("\nDigite seu nome: ")
-    area_desejada = input("Digite a área que deseja acessar: ").strip()
-
-    verificar_acesso_input(nome_usuario, area_desejada, usuarios)
-
-if __name__ == "__main__":
-    main()
+app = FastAPI()
