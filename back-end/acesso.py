@@ -14,10 +14,7 @@ def validar_acesso_usuario(nome: str = Query(...), lugar_acesso: str = Query(...
     for usuario in permissoes["usuarios"]:
         if usuario["nome"].lower() == nome.lower():
             if lugar_acesso.lower() in map(str.lower, usuario["acessos"]):
-                mensagem = "✅ Acesso permitido!"
-                return {mensagem}
+                return {"mensagem": "✅ Acesso permitido!"}
             else:
-                mensagem = "❌ Acesso negado!"
-                return {mensagem}
-    else:
-        return "O usuário não foi encontrado, tente novamente!"
+                return {"mensagem": "❌ Acesso negado!"}
+    return {"mensagem": "O usuário não foi encontrado, tente novamente!"}
