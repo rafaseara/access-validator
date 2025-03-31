@@ -19,5 +19,5 @@ def validar_acesso_usuario(nome: str = Query(...), lugar_acesso: str = Query(...
             else:
                 mensagem = "❌ Acesso negado!"
                 return {mensagem}
-        else:
-            return "O usuário não foi encontrado, tente novamente!"
+    else:
+        return "O usuário não foi encontrado, tente novamente!"
