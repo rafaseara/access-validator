@@ -4,8 +4,13 @@ import json
 app = FastAPI()
 
 def baixar_permissoes():
-    with open("permissoes.json", "r", encoding="utf-8") as file_permissoes:
-        return json.load(file_permissoes)
+    try:
+        with open("permissoes.json", "r", encoding="utf-8") as file_permissoes:
+            return json.load(file_permissoes)
+    except FileNotFoundError:
+        return {"mensagem": "Arquivo de permissões não encontrado!"}
+    except json.JSONDecodeError:
+        return {"mensagem": "Erro ao processar o arquivo de permissões!"}
 
 @app.get("/api/verificar_acesso/")
 def validar_acesso_usuario(nome: str = Query(...), lugar_acesso: str = Query(...)):
