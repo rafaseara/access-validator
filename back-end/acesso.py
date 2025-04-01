@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Query
 import json
+import os
 
 app = FastAPI()
 
@@ -23,3 +24,8 @@ def validar_acesso_usuario(nome: str = Query(...), lugar_acesso: str = Query(...
             else:
                 return {"mensagem": "❌ Acesso negado!"}
     return {"mensagem": "O usuário não foi encontrado, tente novamente!"}
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", 8080))
+    uvicorn.run(app, host="0.0.0.0", port=port)
