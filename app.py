@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_URL = "https://access-validator-production.up.railway.app/api/verificar_acesso"
+API_URL = "http://127.0.0.1:8000/api/verificar_acesso/"
 
 st.set_page_config(page_title="Validador de Acessos", layout="centered")
 st.title("Verificando o Acesso")
